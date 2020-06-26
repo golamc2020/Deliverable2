@@ -14,16 +14,12 @@ public class Deliverable2 {
 		String  headsOrTailsGuess;
 		headsOrTailsGuess = scan.nextLine();
 		
-		System.out.println(headsOrTailsGuess);
-		
 		System.out.println("How many times shall we flip a coin?");
 		
 		int numberOfFlips;
 		numberOfFlips=scan.nextInt();
 		
-		System.out.println(numberOfFlips);
-		
-		int correctCount = 0;
+		double correctCount=0;
 	
 		for (int i=0; i<numberOfFlips;i++) {
 			int rand = (int)(Math.random()*2);
@@ -36,9 +32,7 @@ public class Deliverable2 {
 		}
 		System.out.println("Your guess "+headsOrTailsGuess+ " came up "+correctCount+" time(s).");
 	
-        System.out.println("That's "+correctCount/numberOfFlips*100 +"%");
+        System.out.println("That's "+(correctCount/numberOfFlips*100)+"%");
 		
 	}
-	
-
 }
